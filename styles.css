@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    border-bottom: 5px solid gold;
+    width: 100%;
+    position: fixed;
+    top : -16px;
+}
+
+#menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: inherit;
+}
