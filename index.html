@@ -58,11 +58,11 @@
                     <h3>HTML</h3>
                     <pre>
                         <code>
-        &ltbody>
-        &lth1>RANDOM BACKGROUND COLOR CHANGER&lt/h1>
-        &lth3>Hex Code: #000000&lt/h3>
-        &ltbutton>Change Background Color&lt/button>
-        &lt/body>
+        &lt;body&gt;
+        &lt;h1&gt;RANDOM BACKGROUND COLOR CHANGER&lt;/h1&gt;
+        &lt;h3&gt;Hex Code: #000000&lt;/h3&gt;
+        &lt;button&gt;Change Background Color&lt;/button&gt;
+        &lt;/body&gt;
                         </code>
                     </pre>
                     <h3>CSS</h3>
@@ -102,7 +102,7 @@
         
         function getColors(){
             let colors = ["", 0];
-            for (let i=1; i&lt4;i++){
+            for (let i=1; i&lt;4;i++){
                 let randomColor = Math.floor(Math.random()*256);
                 colors[1] += randomColor;
                 colors[0] += colorToHex(randomColor);
@@ -116,21 +116,23 @@
                 </section>
                 <section id="projects">
                     <h2 class="headers">My projects</h2>   
-                    <p><a href="https://Yaras1auHaury1avets.github.io/rsschool-cv/" target="_blank" title="DON'T CLICK!!!" id="project-link">This is</a> my first, and I hope, the last project)))This page</p>
+                    <p><a href="https://Yaras1auHaury1avets.github.io/rsschool-cv/" target="_blank" title="DON'T CLICK!!!" id="project-link">This is</a> my first, and I hope, the last project)))</p>
                 </section>
                 <section id="edu">
                     <h3>Education & Courses</h3>
                     <ul>
-                        <li>Univercity</li>
-                        <ul>
-                        <li><a href="https://pust.co/" target="_blank" title="Alma mater">Pyongyang University of Science and Technology</a></li>
-                        </ul>
-                        <li>Courses</li>
-                        <ul>
-                            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp (studing)</a></li>
-                            <li><a href="https://rs.school/" target="_blank">RS School (studing)</a></li>
-                            <li><a href="https://learn.epam.com/" target="_blank">Front-End Self-Paced Online Program (studing)</a></li>
-                        </ul>
+                        <li>Univercity
+                            <ul>
+                                <li><a href="https://pust.co/" target="_blank" title="Alma mater">Pyongyang University of Science and Technology</a></li>
+                            </ul>
+                        </li>
+                        <li>Courses
+                            <ul>
+                                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp (studing)</a></li>
+                                <li><a href="https://rs.school/" target="_blank">RS School (studing)</a></li>
+                                <li><a href="https://learn.epam.com/" target="_blank">Front-End Self-Paced Online Program (studing)</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </section>
                 <section id="languages">
