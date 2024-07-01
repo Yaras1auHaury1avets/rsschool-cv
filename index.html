@@ -23,8 +23,8 @@
         </header>
         <main>
             <div id="container">
-                <h1>CV</h1>
-                <section id="profile">
+                <h1 id="profile">CV</h1>
+                <section id="profile-section">
                     <div id="profile-container">
                         <h2>YARASLAU HAURYLAVETS</h2>
                         <p>Professional slacker</p>
@@ -45,7 +45,7 @@
                     </p> 
                 </section>
                 <section id="skills">
-                    <h2 class="headers">My skills</h2>
+                    <h2 class="headers" >My skills</h2>
                     <ul> 
                         <li>Drink beer</li>
                         <li>Lay on the sofa</li>
@@ -56,61 +56,67 @@
                 <section id="code">
                     <h2 class="headers">My code(example)</h2>
                     <h3>HTML</h3>
-                    <code>
-                        <body>
-                            <h1>RANDOM BACKGROUND COLOR CHANGER</h1>
-                            <h3>Hex Code: #000000</h3>
-                            <button>Change Background Color</button>
-                        </body>
-                    </code>
+                    <pre>
+                        <code>
+        &ltbody>
+        &lth1>RANDOM BACKGROUND COLOR CHANGER&lt/h1>
+        &lth3>Hex Code: #000000&lt/h3>
+        &ltbutton>Change Background Color&lt/button>
+        &lt/body>
+                        </code>
+                    </pre>
                     <h3>CSS</h3>
-                    <code>
-                        body {
-                            background-color: #000000;
-                        }                        
-                        
-                        h1, h3 {
-                            color: #FFFFFF;
-                            text-align: center;
-                        }
-                        
-                        button {
-                            display: block;
-                            margin: 10px auto;
-                            width: 15%;
-                            height: 5%;
-                            min-height: 30px;
-                            font-size: 20px;
-                        }
-                    </code>
+                    <pre>
+                        <code>
+        body {
+            background-color: #000000;
+        }                        
+        
+        h1, h3 {
+            color: #FFFFFF;
+            text-align: center;
+        }
+        
+        button {
+            display: block;
+            margin: 10px auto;
+            width: 15%;
+            height: 5%;
+            min-height: 30px;
+            font-size: 20px;
+        }
+                        </code>
+                    </pre>
                     <h3>JS</h3>
-                    <code>
-                        function changeColor(){
-                            let backgroundAndFontColorArray = getColors();
-                            let backgroundColor = "#" + backgroundAndFontColorArray[0];
-                            let fontColor = backgroundAndFontColorArray[1];
-                            body.style.backgroundColor =  backgroundColor;
-                            h3.innerText = "Hex Code: " + backgroundColor;
-                            h1.style.color = fontColor;
-                            h3.style.color = fontColor;
-                        }
-                        
-                        function getColors(){
-                            let colors = ["", 0];
-                            for (let i=1; i<4;i++){
-                                let randomColor = Math.floor(Math.random()*256);
-                                colors[1] += randomColor;
-                                colors[0] += colorToHex(randomColor);
-                        
-                            }
-                            colors[1] = colors[1]>=384 ? "#000000" : "#FFFFFF";
-                            return colors;
-                        }
-                    </code>
+                    <pre>
+                        <code>
+        function changeColor(){
+            let backgroundAndFontColorArray = getColors();
+            let backgroundColor = "#" + backgroundAndFontColorArray[0];
+            let fontColor = backgroundAndFontColorArray[1];
+            body.style.backgroundColor =  backgroundColor;
+            h3.innerText = "Hex Code: " + backgroundColor;
+            h1.style.color = fontColor;
+            h3.style.color = fontColor;
+        }
+        
+        function getColors(){
+            let colors = ["", 0];
+            for (let i=1; i&lt4;i++){
+                let randomColor = Math.floor(Math.random()*256);
+                colors[1] += randomColor;
+                colors[0] += colorToHex(randomColor);
+        
+            }
+            colors[1] = colors[1]>=384 ? "#000000" : "#FFFFFF";
+            return colors;
+        }
+                        </code>    
+                    </pre>
                 </section>
                 <section id="projects">
                     <h2 class="headers">My projects</h2>   
-                    <p>This is my first, and I hope, the last project:<br><a href="https://Yaras1auHaury1avets.github.io/rsschool-cv/" target="_blank" title="DON'T CLICK!!!">This page</a></p>
+                    <p><a href="https://Yaras1auHaury1avets.github.io/rsschool-cv/" target="_blank" title="DON'T CLICK!!!" id="project-link">This is</a> my first, and I hope, the last project)))This page</p>
                 </section>
                 <section id="edu">
                     <h3>Education & Courses</h3>
@@ -139,10 +145,10 @@
         </main>
         <footer>
             <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" title="RS School"><img src="logo.svg" alt="logo"></a>
-            <span>
+            <div id="footer-div">
                 <span>2024</span>
                 <span><a href="https://github.com/Yaras1auHaury1avets" target="_blank" title="My Github account">My GitHub</a></span>
-            </span>
+            </div>
         </footer>
     </body>
 </html>
