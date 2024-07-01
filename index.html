@@ -3,10 +3,154 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CV</title>
+        <title>CV - Yaraslau Haurylavets</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#edu">Education & Courses</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="container">
+                <h1 id="profile">CV</h1>
+                <section id="profile-section">
+                    <div id="profile-container">
+                        <h2>YARASLAU HAURYLAVETS</h2>
+                        <p>Professional slacker</p>
+                    </div>
+                    <img src="foto.webp" alt="my awful foto">
+                </section>
+                <section id="contacts">
+                    <h2 class="headers">Contacts</h2>
+                    <ul>
+                        <li>Phone: +47-854-12-15</li>
+                        <li>Discord: mirled (@Yaras1auHaury1avets)</li>
+                        <li>GitHub: Yaras1auHaury1avets</li>
+                    </ul>
+                </section>
+                <section id="summary">
+                    <h2 class="headers">About me</h2>
+                    <p>Extremely lazy person without any goals and ambitions. If there is any chance to give up, I'll do it. I'm happy to receive welfare and do nothing. I've signed up for this course only because my wife made me. Now, instead of drinking beer with friends, I have to write this cv.
+                    </p> 
+                </section>
+                <section id="skills">
+                    <h2 class="headers" >My skills</h2>
+                    <ul> 
+                        <li>Drink beer</li>
+                        <li>Lay on the sofa</li>
+                        <li>Sing indecent songs</li>
+                        <li>Smoke big joint of weed</li>
+                    </ul>
+                </section>
+                <section id="code">
+                    <h2 class="headers">My code(example)</h2>
+                    <h3>HTML</h3>
+                    <pre>
+                        <code>
+        &lt;body&gt;
+        &lt;h1&gt;RANDOM BACKGROUND COLOR CHANGER&lt;/h1&gt;
+        &lt;h3&gt;Hex Code: #000000&lt;/h3&gt;
+        &lt;button&gt;Change Background Color&lt;/button&gt;
+        &lt;/body&gt;
+                        </code>
+                    </pre>
+                    <h3>CSS</h3>
+                    <pre>
+                        <code>
+        body {
+            background-color: #000000;
+        }                        
+        
+        h1, h3 {
+            color: #FFFFFF;
+            text-align: center;
+        }
+        
+        button {
+            display: block;
+            margin: 10px auto;
+            width: 15%;
+            height: 5%;
+            min-height: 30px;
+            font-size: 20px;
+        }
+                        </code>
+                    </pre>
+                    <h3>JS</h3>
+                    <pre>
+                        <code>
+        function changeColor(){
+            let backgroundAndFontColorArray = getColors();
+            let backgroundColor = "#" + backgroundAndFontColorArray[0];
+            let fontColor = backgroundAndFontColorArray[1];
+            body.style.backgroundColor =  backgroundColor;
+            h3.innerText = "Hex Code: " + backgroundColor;
+            h1.style.color = fontColor;
+            h3.style.color = fontColor;
+        }
+        
+        function getColors(){
+            let colors = ["", 0];
+            for (let i=1; i&lt;4;i++){
+                let randomColor = Math.floor(Math.random()*256);
+                colors[1] += randomColor;
+                colors[0] += colorToHex(randomColor);
+        
+            }
+            colors[1] = colors[1]>=384 ? "#000000" : "#FFFFFF";
+            return colors;
+        }
+                        </code>    
+                    </pre>
+                </section>
+                <section id="projects">
+                    <h2 class="headers">My projects</h2>   
+                    <p><a href="https://Yaras1auHaury1avets.github.io/rsschool-cv/" target="_blank" title="DON'T CLICK!!!" id="project-link">This is</a> my first, and I hope, the last project)))</p>
+                </section>
+                <section id="edu">
+                    <h3>Education & Courses</h3>
+                    <ul>
+                        <li>Univercity
+                            <ul>
+                                <li><a href="https://pust.co/" target="_blank" title="Alma mater">Pyongyang University of Science and Technology</a></li>
+                            </ul>
+                        </li>
+                        <li>Courses
+                            <ul>
+                                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp (studing)</a></li>
+                                <li><a href="https://rs.school/" target="_blank">RS School (studing)</a></li>
+                                <li><a href="https://learn.epam.com/" target="_blank">Front-End Self-Paced Online Program (studing)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="languages">
+                    <h2 class="headers">Languages</h2>
+                    <ul>
+                        <li>English - A2 Pre-Intermediate</li>
+                        <li>Russian - native</li>
+                        <li>Polish - A0 "Kurwa"-only level</li> 
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" title="RS School"><img src="logo.svg" alt="logo"></a>
+            <div id="footer-div">
+                <span>2024</span>
+                <span><a href="https://github.com/Yaras1auHaury1avets" target="_blank" title="My Github account">My GitHub</a></span>
+            </div>
+        </footer>
     </body>
 </html>
